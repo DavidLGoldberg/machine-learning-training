@@ -26,7 +26,9 @@ RUN apt-get update && apt-get install -y \
 		&& \
 	apt-get clean && \
 	apt-get autoremove && \
-	rm -rf /var/lib/apt/lists/* && \
+	rm -rf /var/lib/apt/lists/*
+
+RUN pip install --upgrade pip
 
 RUN pip install --upgrade requests six smart_open ipython[notebook] numpy scipy gensim pandas sklearn matplotlib seaborn
 
