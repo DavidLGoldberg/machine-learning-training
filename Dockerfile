@@ -32,7 +32,7 @@ RUN pip install --upgrade pip
 
 RUN pip install --upgrade requests six smart_open ipython[notebook] numpy scipy gensim pandas sklearn matplotlib seaborn
 
-RUN mkdir /home/experiments && cd /home/experiments
+RUN mkdir /home/experiments
 
 # Set up notebook config
 # COPY jupyter_notebook_config.py /root/.jupyter/
