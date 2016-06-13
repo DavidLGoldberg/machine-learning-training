@@ -44,4 +44,6 @@ RUN mkdir /home/experiments && cd /home/experiments
 EXPOSE 8888
 
 # WORKDIR "/root"
+# CMD ["/usr/local/bin/ipython", "notebook", "--no-browser", "--port=8888", "--ip=*", "--notebook-dir=/home/experiments"]
+# CMD ["sh", "-c\"/usr/local/bin/ipython notebook --no-browser --port=8888 --ip=* --notebook-dir=/home/experiments\""]
 CMD ["/bin/bash"]
